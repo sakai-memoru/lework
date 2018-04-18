@@ -1,5 +1,5 @@
-# Summary
+# Table of Contents
 
-* [Introduction](README.md)
+* [Introduction](docs/README.md)
 
-* [double boot for windows and ubuntu](double-boot-for-windows-and-ubuntu.md)
+* [double boot for windows and ubuntu](docs/double-boot-for-windows-and-ubuntu.md)
