@@ -1,3 +1,4 @@
 # LE memo
 
-[Home](README.md)
+[About](README.md)
+[Home](index.md)
