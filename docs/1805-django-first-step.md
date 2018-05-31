@@ -1,5 +1,5 @@
 ## Overview
-- Django‚ÌƒCƒ“ƒXƒg[ƒ‹‚ÆAhello world‚ğ•\¦‚·‚é‚Ü‚Å‚ğA‹Lq‚·‚éB
+- Djangoã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã¨ã€hello worldã‚’è¡¨ç¤ºã™ã‚‹ã¾ã§ã‚’ã€è¨˜è¿°ã™ã‚‹ã€‚
 
 
 ## Environment
@@ -11,10 +11,10 @@
 - virtualenvwrapper-win
 - git 2.16.2.windows.1
 
-- ˆÈ‰ºA‚±‚ÌArticle‚Åinstallation
+- ä»¥ä¸‹ã€ã“ã®Articleã§installation
 -- django
 
-## 1. ŠÂ‹«Šm”F
+## 1. ç’°å¢ƒç¢ºèª
 
 ```
 PS G:\env\py> git --version
@@ -38,7 +38,7 @@ Pass a name to activate one of the following virtualenvs:
 ```
 
 
-## 2. virtualenv\’z
+## 2. virtualenvæ§‹ç¯‰
 
 ```
 PS G:\env\py> mkproject djfirst
@@ -61,7 +61,7 @@ djfirst
 
 ## 3. pip install django
 
-- django‚ÌƒCƒ“ƒXƒg[ƒ‹
+- djangoã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 
 ```
 PS > cd $Env:WORKON_HOME
@@ -104,7 +104,7 @@ __pycache__
 
 G:\env\py\djfirst\Lib\site-packages\easy-install.pth
 ==============================================================================
-w’è‚³‚ê‚½ƒtƒ@ƒCƒ‹‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB
+æŒ‡å®šã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã€‚
 
 G:\env\py\djfirst\Lib\site-packages\virtualenv_path_extensions.pth
 ==============================================================================
@@ -138,7 +138,7 @@ d-----         6/1/2018   6:46 AM                __pycache__
 ```
 
 
-- django-admin : django web application framework‚Ìadminƒc[ƒ‹
+- django-admin : django web application frameworkã®adminãƒ„ãƒ¼ãƒ«
 
 ``` powershell
 (djfirst) PS G:\workspace> whereis django-admin
@@ -150,19 +150,19 @@ G:\env\py\djfirst\Scripts\django-admin.exe
 
 |comand|description|note|
 |------|------|------|
-|startproject|project@(site)@‚ğì¬||
-|startapp|web app‚ğì¬||
-|runserver|site‚ğ‹N“®‚·‚é||
-|createsuperuser|ŠÇ—ƒ†[ƒU‚ğì¬‚·‚é||
-|makemigrations|ƒ}ƒCƒOƒŒ[ƒVƒ‡ƒ“ƒtƒ@ƒCƒ‹‚Ìì¬||
-|migrate|ƒf[ƒ^ƒx[ƒX‚Éƒ}ƒCƒOƒŒ[ƒVƒ‡ƒ“‚ğ“K—p‚·‚é||
+|startproject|projectã€€(site)ã€€ã‚’ä½œæˆ||
+|startapp|web appã‚’ä½œæˆ||
+|runserver|siteã‚’èµ·å‹•ã™ã‚‹||
+|createsuperuser|ç®¡ç†ãƒ¦ãƒ¼ã‚¶ã‚’ä½œæˆã™ã‚‹||
+|makemigrations|ãƒã‚¤ã‚°ãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ãƒ•ã‚¡ã‚¤ãƒ«ã®ä½œæˆ||
+|migrate|ãƒ‡ãƒ¼ã‚¿ãƒ™ãƒ¼ã‚¹ã«ãƒã‚¤ã‚°ãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ã‚’é©ç”¨ã™ã‚‹||
 
 - reference
--- Django ŠÇ—ƒRƒ}ƒ“ƒh manage.py ‚Ü‚Æ‚ß
+-- Django ç®¡ç†ã‚³ãƒãƒ³ãƒ‰ manage.py ã¾ã¨ã‚
 --- https://qiita.com/okoppe8/items/7e3de8a4dd40b48debea
 
 
-## 4. Siteì¬
+## 4. Siteä½œæˆ
 
 ### 4.1 django-admin startproject
 
@@ -220,22 +220,22 @@ Quit the server with CTRL-BREAK.
 
 ![Django first installation success screen](https://i.imgur.com/KDJJhA9.png "django congratulations")
 
-- ¶¬‚³‚ê‚½ƒtƒ@ƒCƒ‹
+- ç”Ÿæˆã•ã‚ŒãŸãƒ•ã‚¡ã‚¤ãƒ«
 
 |py|description|note|
 |------|------|------|
-|manage.py|manageƒc[ƒ‹||
-|db.sqlite3|RDBƒtƒ@ƒCƒ‹(SQLite3)||
+|manage.py|manageãƒ„ãƒ¼ãƒ«||
+|db.sqlite3|RDBãƒ•ã‚¡ã‚¤ãƒ«(SQLite3)||
 |djfirst2|Package directory||
-|jdfirst2/settings.py|Web Site‚Ìİ’èƒtƒ@ƒCƒ‹||
-|jdfirst2/urls.py|Path‚Ìİ’èƒtƒ@ƒCƒ‹ (url dispatcher) ||
-|jdfirst2/wsgi.py|Web Server‚ÆApplication Server‚ÌÚ‘±İ’è<br>(WSGIŒİŠ·WebƒT[ƒo[‚Æ‚ÌƒGƒ“ƒgƒŠ[ƒ|ƒCƒ“ƒg)|¦•ÏX‚È‚µ|
-|jdfirst2/\_\_init__.py|‚±‚ÌƒfƒBƒŒƒNƒgƒŠ‚ªpythonƒpƒbƒP[ƒW‚Å‚ ‚é‚±‚Æ‚ğ¦‚·‹óƒtƒ@ƒCƒ‹|¦•ÏX‚È‚µ|
+|jdfirst2/settings.py|Web Siteã®è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«||
+|jdfirst2/urls.py|Pathã®è¨­å®šãƒ•ã‚¡ã‚¤ãƒ« (url dispatcher) ||
+|jdfirst2/wsgi.py|Web Serverã¨Application Serverã®æ¥ç¶šè¨­å®š<br>(WSGIäº’æ›Webã‚µãƒ¼ãƒãƒ¼ã¨ã®ã‚¨ãƒ³ãƒˆãƒªãƒ¼ãƒã‚¤ãƒ³ãƒˆ)|â€»å¤‰æ›´ãªã—|
+|jdfirst2/\_\_init__.py|ã“ã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªãŒpythonãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã§ã‚ã‚‹ã“ã¨ã‚’ç¤ºã™ç©ºãƒ•ã‚¡ã‚¤ãƒ«|â€»å¤‰æ›´ãªã—|
 
 
 ## 5. git repository commit
 
-- git‚Ì‰Šúİ’è
+- gitã®åˆæœŸè¨­å®š
 
 
 ```
@@ -254,7 +254,7 @@ core.ignorecase=true
 ```
 
 
-- git‚Ìfirst commit
+- gitã®first commit
 
 
 ```
@@ -262,7 +262,7 @@ core.ignorecase=true
 (djfirst2) PS G:\workspace\py\djfirst> notepad .gitignore
 (djfirst2) PS G:\workspace\py\djfirst> ls
 
-    ƒfƒBƒŒƒNƒgƒŠ: G:\workspace\py\djfirst
+    ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª: G:\workspace\py\djfirst
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
@@ -290,9 +290,9 @@ Initialized empty Git repository in G:/workspace/py/djfirst/.git/
 
 
 
-## 5. Hello world web appì¬
+## 5. Hello world web appä½œæˆ
 - reference
--- ‚Í‚¶‚ß‚Ä‚Ì Django ƒAƒvƒŠì¬A‚»‚Ì 1
+-- ã¯ã˜ã‚ã¦ã® Django ã‚¢ãƒ—ãƒªä½œæˆã€ãã® 1
 --- https://docs.djangoproject.com/ja/2.0/intro/tutorial01/
 
 ### 5.1 python manage.py startapp hello
@@ -301,7 +301,7 @@ Initialized empty Git repository in G:/workspace/py/djfirst/.git/
 (djfirst) PS G:\workspace\py\djfirst> python manage.py startapp hello
 (djfirst) PS G:\workspace\py\djfirst> ls
 
-    ƒfƒBƒŒƒNƒgƒŠ: G:\workspace\py\djfirst
+    ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª: G:\workspace\py\djfirst
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
@@ -314,7 +314,7 @@ d-----       2018/05/28     12:56                hello
 
 (djfirst2) PS G:\workspace\py\djfirst2> ls .\hello\
 
-    ƒfƒBƒŒƒNƒgƒŠ: G:\workspace\py\djfirst2\hello
+    ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª: G:\workspace\py\djfirst2\hello
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
@@ -331,18 +331,18 @@ d-----       2018/05/28     12:56                migrations
 |py|description|note|
 |------|------|------|
 |hello|Web App directory||
-|models.py|modelsƒtƒ@ƒCƒ‹||
-|views.py|viewsƒtƒ@ƒCƒ‹<br>(path‚É‘Î‚·‚é“®ì‚ğ’è‹`) ||
-|urls.py|Routing setting |’Ç‰Á‚Åì¬|
-|tests.py|unittest—p||
-|apps.py||¦•ÏX‚È‚µ|
-|admin.py||¦•ÏX‚È‚µ|
-|\_\_init__.py|‚±‚ÌƒfƒBƒŒƒNƒgƒŠ‚ªpythonƒpƒbƒP[ƒW‚Å‚ ‚é<br>‚±‚Æ‚ğ¦‚·‹óƒtƒ@ƒCƒ‹|¦•ÏX‚È‚µ|
+|models.py|modelsãƒ•ã‚¡ã‚¤ãƒ«||
+|views.py|viewsãƒ•ã‚¡ã‚¤ãƒ«<br>(pathã«å¯¾ã™ã‚‹å‹•ä½œã‚’å®šç¾©) ||
+|urls.py|Routing setting |è¿½åŠ ã§ä½œæˆ|
+|tests.py|unittestç”¨||
+|apps.py||â€»å¤‰æ›´ãªã—|
+|admin.py||â€»å¤‰æ›´ãªã—|
+|\_\_init__.py|ã“ã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªãŒpythonãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã§ã‚ã‚‹<br>ã“ã¨ã‚’ç¤ºã™ç©ºãƒ•ã‚¡ã‚¤ãƒ«|â€»å¤‰æ›´ãªã—|
 
-- hello/views.py‚Æhello/urls.py‚ğ•ÒWB
-- djfirst/urls.py‚ğ•ÒWB
+- hello/views.pyã¨hello/urls.pyã‚’ç·¨é›†ã€‚
+- djfirst/urls.pyã‚’ç·¨é›†ã€‚
 
-- web site‚ğ‹N“®
+- web siteã‚’èµ·å‹•
 
 
 ```

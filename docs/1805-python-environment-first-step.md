@@ -3,20 +3,20 @@
 
 ##  Overview
 
-- python‚Ævirtualenv on windows‚ÌƒCƒ“ƒXƒg[ƒ‹‚ÆAŠÂ‹«\’z‚É‚Â‚¢‚ÄA‹Lq‚·‚éB
+- pythonã¨virtualenv on windowsã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã¨ã€ç’°å¢ƒæ§‹ç¯‰ã«ã¤ã„ã¦ã€è¨˜è¿°ã™ã‚‹ã€‚
 
 
 ##  1. python installation
 
-- python ƒTƒCƒg‚É‚ÄApython‚ğƒ_ƒEƒ“ƒ[ƒh‚µ‚ÄAƒCƒ“ƒXƒg[ƒ‹‚·‚éB
+- python ã‚µã‚¤ãƒˆã«ã¦ã€pythonã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ã¦ã€ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ã€‚
   + https://www.python.org/
 - reference
-  { Python‚ğƒCƒ“ƒXƒg[ƒ‹‚·‚éifor Windowsj
-@@@* https://qiita.com/taiponrock/items/f574dd2cddf8851fb02c
+  ï¼‹ Pythonã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ï¼ˆfor Windowsï¼‰
+ã€€ã€€ã€€* https://qiita.com/taiponrock/items/f574dd2cddf8851fb02c
 
-- ŠÂ‹«•Ï” path‚ÉApython‚ÌƒpƒX‚ğ’Ç‰Á‚·‚éB
+- ç’°å¢ƒå¤‰æ•° pathã«ã€pythonã®ãƒ‘ã‚¹ã‚’è¿½åŠ ã™ã‚‹ã€‚
 
-- ˆÈ‰ºApowershell‚ÅŠm”FB
+- ä»¥ä¸‹ã€powershellã§ç¢ºèªã€‚
 
 ``` powershell
 PS > $Env:path.split(";") | out-string -stream | sls py
@@ -46,10 +46,10 @@ G:\Users\<username>\AppData\Local\Programs\Python\Python36-32\lib\site-packages
 
 ##  2. pip installation
 
-- pip‚ÍApython 3.4‚æ‚èƒCƒ“ƒXƒg[ƒ‰‚É“¯«‚³‚ê‚Ä‚¢‚éB‚æ‚èAã‹L‚ÅApath‚ª’Ê‚Á‚Ä‚¢‚ê‚ÎA‹N“®‚Å‚«‚éB
-- pip‚ğAƒo[ƒWƒ‡ƒ“ƒAƒbƒv‚·‚éB (powershell‚ÍŠÇ—ÒŒ ŒÀ‚Å‹N“®‚·‚é) ``` pip install --upgrade pip```
+- pipã¯ã€python 3.4ã‚ˆã‚Šã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ©ã«åŒæ¢±ã•ã‚Œã¦ã„ã‚‹ã€‚ã‚ˆã‚Šã€ä¸Šè¨˜ã§ã€pathãŒé€šã£ã¦ã„ã‚Œã°ã€èµ·å‹•ã§ãã‚‹ã€‚
+- pipã‚’ã€ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚¢ãƒƒãƒ—ã™ã‚‹ã€‚ (powershellã¯ç®¡ç†è€…æ¨©é™ã§èµ·å‹•ã™ã‚‹) ``` pip install --upgrade pip```
 
-- ˆÈ‰ºApowershell‚ÅŠm”FB
+- ä»¥ä¸‹ã€powershellã§ç¢ºèªã€‚
 
 ``` powershell
 ps > pip install --upgrade pip
@@ -71,14 +71,14 @@ pip 10.0.1 from cusersusernameappdatalocalprogramspythonpython36-32libsite-packa
 
 ##  3. virtualenv / virtualenvwrapper-win installation
 
-- virtualenv  virtualenvwrapper-win ‚ğinstall
+- virtualenv  virtualenvwrapper-win ã‚’install
 
 ``` powershell
 ps > pip install virtualenv
 ps > pip install virtualenvwrapper-win
 ```
 
-- ˆÈ‰ºApowershell‚ÅŠm”FB
+- ä»¥ä¸‹ã€powershellã§ç¢ºèªã€‚
 
 ``` powershell
 PS > virtualenv --version
@@ -147,15 +147,15 @@ Mode                LastWriteTime         Length Name
 
 ```
 
-##  4. ƒvƒƒWƒFƒNƒg—p‚ÌpythonŠÂ‹«‚ğ¶¬
+##  4. ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆç”¨ã®pythonç’°å¢ƒã‚’ç”Ÿæˆ
 
-- python‚Å‚ÍApip‚ÅƒCƒ“ƒXƒg[ƒ‹‚µ‚½ŠO•”ƒpƒbƒP[ƒW‚ÍAlibsite-packages‚É”z’u‚³‚ê‚éB‚ªAƒvƒƒWƒFƒNƒg‚²‚Æ‚ÉƒCƒ“ƒXƒg[ƒ‹‚·‚éƒpƒbƒP[ƒWŠÂ‹«‚ğŠÇ—‚·‚éê‡Avirtualenv‚ğ—˜—p‚·‚éB
-- virtualenv‚ÉAwrap‚µ‚Äg‚¢‚â‚·‚­‚µ‚½‚Ì‚ªAvirtualenvwrapper-win‚Æ‚È‚éB
-- ˆÈ‰º‚ÌŠÂ‹«•Ï”‚ğİ’èB
--- WORKON_HOME  : pythonŠÂ‹«‚ğ”z”õ
--- PROJECT_HOME : ProjectŠÂ‹«‚ğ”z”õ
+- pythonã§ã¯ã€pipã§ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ãŸå¤–éƒ¨ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã¯ã€libsite-packagesã«é…ç½®ã•ã‚Œã‚‹ã€‚ãŒã€ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã”ã¨ã«ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ç’°å¢ƒã‚’ç®¡ç†ã™ã‚‹å ´åˆã€virtualenvã‚’åˆ©ç”¨ã™ã‚‹ã€‚
+- virtualenvã«ã€wrapã—ã¦ä½¿ã„ã‚„ã™ãã—ãŸã®ãŒã€virtualenvwrapper-winã¨ãªã‚‹ã€‚
+- ä»¥ä¸‹ã®ç’°å¢ƒå¤‰æ•°ã‚’è¨­å®šã€‚
+-- WORKON_HOME  : pythonç’°å¢ƒã‚’é…å‚™
+-- PROJECT_HOME : Projectç’°å¢ƒã‚’é…å‚™
 
-- ˆÈ‰ºApowershell‚ÅŠm”FB
+- ä»¥ä¸‹ã€powershellã§ç¢ºèªã€‚
 
 ``` powershell
 PS G:\> dir Env: | out-string -stream | select-string "WORKON|PROJECT"
@@ -164,21 +164,21 @@ PROJECT_HOME                   G:\workplace\py
 WORKON_HOME                    G:\env\py
 ```
 
-- ¡‰ñAg—p‚·‚écommand‚ÍAˆÈ‰ºBƒvƒƒWƒFƒNƒg‚²‚Æirepository‚²‚Æj‚ÉŠÂ‹«‚ğ•ª‚¯‚é‚±‚Æ‚É‚·‚éB
+- ä»Šå›ã€ä½¿ç”¨ã™ã‚‹commandã¯ã€ä»¥ä¸‹ã€‚ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã”ã¨ï¼ˆï¼repositoryã”ã¨ï¼‰ã«ç’°å¢ƒã‚’åˆ†ã‘ã‚‹ã“ã¨ã«ã™ã‚‹ã€‚
 
 |command |function|note|
 |--------|--------|-----------|
-|workon|ŠÂ‹«ˆê——•\¦||
-|workon <envname>|ŠÂ‹«‚ÌØ‚è‘Ö‚¦|¦‚È‚º‚©A“®ì‚µ‚È‚¢I|
-|mkproject <envname>|ƒvƒƒWƒFƒNƒgŠÂ‹«‚Ìì¬||
-|rmvirtualenv <envname>|ŠÂ‹«‚Ìíœ||
-|lssitepackages|ls ŠO•”ƒpƒbƒP[ƒW||
-|lsvirtualenv|ls ŠÂ‹«||
+|workon|ç’°å¢ƒä¸€è¦§è¡¨ç¤º||
+|workon <envname>|ç’°å¢ƒã®åˆ‡ã‚Šæ›¿ãˆ|â€»ãªãœã‹ã€å‹•ä½œã—ãªã„ï¼|
+|mkproject <envname>|ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆç’°å¢ƒã®ä½œæˆ||
+|rmvirtualenv <envname>|ç’°å¢ƒã®å‰Šé™¤||
+|lssitepackages|ls å¤–éƒ¨ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸||
+|lsvirtualenv|ls ç’°å¢ƒ||
 |virtualenvwrapper|help||
-|whereis <filename>|ƒtƒ@ƒCƒ‹À‘Ì‚Ì•\¦||
+|whereis <filename>|ãƒ•ã‚¡ã‚¤ãƒ«å®Ÿä½“ã®è¡¨ç¤º||
 
 
-- workon envname‚ª“®ì‚µ‚È‚¢‚Ì‚ÅAactivate‚ÍAˆÈ‰º‚ÅÀsB
+- workon envnameãŒå‹•ä½œã—ãªã„ã®ã§ã€activateã¯ã€ä»¥ä¸‹ã§å®Ÿè¡Œã€‚
 
 ``` powershell
 PS > cd $Env:WORKON_HOME
@@ -186,9 +186,9 @@ PS > G:\env\py .<envname>\Scripts\activate
 (<envname>) PS > 
 ```
 
-###  4.1 sampleŠÂ‹«‚ğ¶¬
+###  4.1 sampleç’°å¢ƒã‚’ç”Ÿæˆ
 
-- mkproject‚ÅAproject‚ğ¶¬‚·‚é‚ÆAWORKON_HOME‚ÆPROJECT_HOME‚ÉŠÂ‹«‚ª¶¬‚³‚ê‚éB
+- mkprojectã§ã€projectã‚’ç”Ÿæˆã™ã‚‹ã¨ã€WORKON_HOMEã¨PROJECT_HOMEã«ç’°å¢ƒãŒç”Ÿæˆã•ã‚Œã‚‹ã€‚
 
 ```
 PS G:\env\py> mkproject pysample
@@ -224,7 +224,7 @@ d-----         6/1/2018   6:20 AM                pysample
 
 ```
 
-- ˆÈ‰ºApython‚ÅŠm”FB
+- ä»¥ä¸‹ã€pythonã§ç¢ºèªã€‚
 
 ```
 (pysample) PS G:\workplace\py> python
@@ -248,7 +248,7 @@ G:\workplace\py\pysample
 
 ```
 
-- ˆÈ‰ºAvirtualenvwrapper‚É‚ÄŠm”FB
+- ä»¥ä¸‹ã€virtualenvwrapperã«ã¦ç¢ºèªã€‚
 
 ```
 (pysample) PS G:\workplace\py> lssitepackages
@@ -288,9 +288,9 @@ pysample
 
 ```
 
-###  4.2 sampleŠÂ‹«‚ğíœ
+###  4.2 sampleç’°å¢ƒã‚’å‰Šé™¤
 
-- ˆÈ‰ºAvirtualenv‚ğAdeactivate‚µAŠÂ‹«íœB
+- ä»¥ä¸‹ã€virtualenvã‚’ã€deactivateã—ã€ç’°å¢ƒå‰Šé™¤ã€‚
 ```
 (pysample) PS G:\workplace\py> deactivate
 PS G:\workplace\py> rmvirtualenv pysample
@@ -301,11 +301,11 @@ PS G:\workplace\py>
 ```
 {code}
 
-- ‚È‚¨APROJECT_HOME“à‚ÌPROJECTƒtƒHƒ‹ƒ_‚ÍA“K‹XAíœ‚·‚éB
+- ãªãŠã€PROJECT_HOMEå†…ã®PROJECTãƒ•ã‚©ãƒ«ãƒ€ã¯ã€é©å®œã€å‰Šé™¤ã™ã‚‹ã€‚
 
 
-## ‚TD‚Ü‚Æ‚ß
-- ˆÈãApythonŠÂ‹«\’z‚ÅAvituralenvwrapper‚ğ—˜—p‚µ‚ÄA‰¼‘zŠÂ‹«‚ğ\’z‚µ‚ÄAíœ‚·‚éè‡‚ğ‹Lq‚µ‚½B
+## ï¼•ï¼ã¾ã¨ã‚
+- ä»¥ä¸Šã€pythonç’°å¢ƒæ§‹ç¯‰ã§ã€vituralenvwrapperã‚’åˆ©ç”¨ã—ã¦ã€ä»®æƒ³ç’°å¢ƒã‚’æ§‹ç¯‰ã—ã¦ã€å‰Šé™¤ã™ã‚‹æ‰‹é †ã‚’è¨˜è¿°ã—ãŸã€‚
 
 // --- end of markdown
 
