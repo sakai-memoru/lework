@@ -407,7 +407,11 @@ urlpatterns = [
 ```
 
 ## 6. まとめ
-- 
+
+- 以下を実施した。
+  - djangoをインストール
+  - Web Site作成
+  - Web Applicationを作成（簡易なHello Django!と表示）
 
 
 // --- end of markdown
