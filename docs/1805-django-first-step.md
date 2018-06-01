@@ -1,3 +1,5 @@
+> [Home](../index.md)
+
 # 1805-django-first-step
 
 ## Overview
@@ -92,7 +94,7 @@ pytz       2018.4
 setuptools 39.2.0
 wheel      0.31.1
 
-(djfirst2) PS G:\env\py> lssitepackages
+(djfirst) PS G:\env\py> lssitepackages
 
 dir /b "G:\env\py\djfirst\Lib\site-packages"
 ==============================================================================
@@ -149,6 +151,7 @@ d-----         6/1/2018   6:46 AM                __pycache__
 ### 3.2 django-admin
 
 - django-admin : django web application frameworkのadminツール
+  + djangoでは、サイト、アプリのひな型をコマンドで指示して自動作成したり、modelに即したRDBを自動で生成したりする機能がある提供されている。
 
 ``` powershell
 (djfirst) PS G:\workspace> whereis django-admin
@@ -247,7 +250,7 @@ Quit the server with CTRL-BREAK.
 |jdfirst/\_\_init__.py|このディレクトリがpythonパッケージであることを示す空ファイル|※変更なし|
 
 
-## 5. git repository commit
+### 4.4 git repository commit
 
 - gitの初期設定
 

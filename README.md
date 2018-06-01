@@ -2,7 +2,7 @@
 
 ## Overview
 - Work documents and Wikis.
-- Public documents on IT, such as 'Python', 'Node.js' and 'Ubuntu on AWS'.
+- Public documents on IT, such as 'Python' and 'Ubuntu on AWS'.
 
 ## Contents
 - When working at home, update this repository.

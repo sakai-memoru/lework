@@ -1,5 +1,11 @@
 # Table of Contents
 
-* [Introduction](docs/README.md)
+* [Home](index.md)
 
-* [double boot for windows and ubuntu](docs/double-boot-for-windows-and-ubuntu.md)
+* [About](README.md)
+
+* [SUMMARY](SUMMARY.md)
+
+* [docs/1805-django-first-step.md](docs/1805-django-first-step.md)
+
+* [docs/1805-python-environment-first-step.md](docs/1805-python-environment-first-step.md)
