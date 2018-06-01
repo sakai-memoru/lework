@@ -1,4 +1,4 @@
-> [Home](../index.md)
+＞ [Home](../index.md)
 
 # 1805-django-first-step
 
