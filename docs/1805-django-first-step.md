@@ -1,3 +1,5 @@
+# 1805-django-first-step
+
 ## Overview
 - Djangoのインストールと、hello worldを表示するまでを、記述する。
 
@@ -12,11 +14,14 @@
 - git 2.16.2.windows.1
 
 - 以下、このArticleでinstallation
--- django
+-- django 2.0.5
 
 ## 1. 環境確認
 
-```
+- poowershellで環境を確認
+
+
+``` powershell
 PS G:\env\py> git --version
 git version 2.16.2.windows.1
 PS G:\env\py> python --version
@@ -40,7 +45,9 @@ Pass a name to activate one of the following virtualenvs:
 
 ## 2. virtualenv構築
 
-```
+- mkprojectで、virtual環境を構築
+
+``` powershell
 PS G:\env\py> mkproject djfirst
 Using base prefix 'c:\\users\\<username>\\appdata\\local\\programs\\python\\python36-32'
 New python executable in G:\env\py\djfirst\Scripts\python.exe
@@ -61,9 +68,11 @@ djfirst
 
 ## 3. pip install django
 
+### 3.1 django installation
+
 - djangoのインストール
 
-```
+``` powershell
 PS > cd $Env:WORKON_HOME
 PS G:\env\py> .\djfirst\Scripts\activate
 (djfirst) PS G:\env\py> pip install django
@@ -137,6 +146,7 @@ d-----         6/1/2018   6:46 AM                __pycache__
 -a----         6/1/2018   6:44 AM          93026 wheel.exe
 ```
 
+### 3.2 django-admin
 
 - django-admin : django web application frameworkのadminツール
 
@@ -146,7 +156,7 @@ G:\env\py\djfirst\Scripts\django-admin.exe
 (djfirst) PS G:\> django-admin --version
 2.0.5
 ```
-
+-- django-admin command
 
 |comand|description|note|
 |------|------|------|
@@ -159,16 +169,18 @@ G:\env\py\djfirst\Scripts\django-admin.exe
 
 - reference
 -- Django 管理コマンド manage.py まとめ
---- https://qiita.com/okoppe8/items/7e3de8a4dd40b48debea
+-- https://qiita.com/okoppe8/items/7e3de8a4dd40b48debea
 
 
 ## 4. Site作成
 
-### 4.1 django-admin startproject
+### 4.1 django-admin startproject：サイトの作成
 
+- djangoサイト（Web Application Server)を、http://127.0.0.1:8000/で立ち上げる
+  + mkprojectで作成したプロジェクトフォルダが、django-adminのcommandで生成するフォルダとかぶるので、削除する。
+  + その後、```django-admin startproject djfirst```で、Site（プロジェクト）を生成する。
 
-{code}
-```
+``` powershell
 (djfirst) PS > cd $Env:PROJECT_HOME
 (djfirst) PS G:\workplace\py> rmdir .\djfirst\
 (djfirst) PS G:\workplace\py> django-admin startproject djfirst
@@ -198,9 +210,9 @@ Mode                LastWriteTime         Length Name
 ```
 
 
-### 4.2 python manage.py runserver
+### 4.2 python manage.py runserver：サイトの立ち上げ
 
-```
+``` powershell
 (djfirst) PS G:\workplace\py> cd .\djfirst\
 (djfirst) PS G:\workplace\py\djfirst> python manage.py runserver
 Performing system checks...
@@ -216,9 +228,11 @@ Quit the server with CTRL-BREAK.
 
 ```
 
+### 4.3 SiteへAccess
 - access http://127.0.0.1:8000/
 
-![Django first installation success screen](https://i.imgur.com/KDJJhA9.png "django congratulations")
+![Django first installation success screen](https://i.imgur.com/KDJJhA9.png)
+
 
 - 生成されたファイル
 
@@ -226,11 +240,11 @@ Quit the server with CTRL-BREAK.
 |------|------|------|
 |manage.py|manageツール||
 |db.sqlite3|RDBファイル(SQLite3)||
-|djfirst2|Package directory||
-|jdfirst2/settings.py|Web Siteの設定ファイル||
-|jdfirst2/urls.py|Pathの設定ファイル (url dispatcher) ||
-|jdfirst2/wsgi.py|Web ServerとApplication Serverの接続設定<br>(WSGI互換Webサーバーとのエントリーポイント)|※変更なし|
-|jdfirst2/\_\_init__.py|このディレクトリがpythonパッケージであることを示す空ファイル|※変更なし|
+|djfirst|Package directory||
+|jdfirst/settings.py|Web Siteの設定ファイル||
+|jdfirst/urls.py|Pathの設定ファイル (url dispatcher) ||
+|jdfirst/wsgi.py|Web ServerとApplication Serverの接続設定<br>(WSGI互換Webサーバーとのエントリーポイント)|※変更なし|
+|jdfirst/\_\_init__.py|このディレクトリがpythonパッケージであることを示す空ファイル|※変更なし|
 
 
 ## 5. git repository commit
@@ -238,7 +252,7 @@ Quit the server with CTRL-BREAK.
 - gitの初期設定
 
 
-```
+``` powershell
 (djfirst) PS G:\workspace\py\djfirst> git config --global user.name "User Name"
 (djfirst) PS G:\workspace\py\djfirst> git config --global user.email "User Mail address"
 (djfirst) PS G:\workspace\py\djfirst> git config --list
@@ -257,7 +271,7 @@ core.ignorecase=true
 - gitのfirst commit
 
 
-```
+``` powershell
 (djfirst2) PS G:\workspace\py\djfirst> notepad README.md
 (djfirst2) PS G:\workspace\py\djfirst> notepad .gitignore
 (djfirst2) PS G:\workspace\py\djfirst> ls
@@ -292,12 +306,12 @@ Initialized empty Git repository in G:/workspace/py/djfirst/.git/
 
 ## 5. Hello world web app作成
 - reference
--- はじめての Django アプリ作成、その 1
---- https://docs.djangoproject.com/ja/2.0/intro/tutorial01/
+  - Djangoメモ(3) : Hello Worldを表示するアプリを作成 
+    * https://wonderwall.hatenablog.com/entry/2018/03/05/070000
 
-### 5.1 python manage.py startapp hello
+### 5.1 python manage.py startapp hello : Web Applicationの作成
 
-```
+``` powershell
 (djfirst) PS G:\workspace\py\djfirst> python manage.py startapp hello
 (djfirst) PS G:\workspace\py\djfirst> ls
 
@@ -312,9 +326,9 @@ d-----       2018/05/28     12:56                hello
 -a----       2018/05/28     12:18            555 manage.py
 -a----       2018/05/28     11:32            144 README.md
 
-(djfirst2) PS G:\workspace\py\djfirst2> ls .\hello\
+(djfirst2) PS G:\workspace\py\djfirst> ls .\hello\
 
-    ディレクトリ: G:\workspace\py\djfirst2\hello
+    ディレクトリ: G:\workspace\py\djfirst\hello
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
@@ -326,37 +340,58 @@ d-----       2018/05/28     12:56                migrations
 -a----       2018/05/28     12:56             66 views.py
 -a----       2018/05/28     12:56              0 __init__.py
 ```
-{/code}
+
+- 生成されたファイル
 
 |py|description|note|
 |------|------|------|
 |hello|Web App directory||
-|models.py|modelsファイル||
-|views.py|viewsファイル<br>(pathに対する動作を定義) ||
-|urls.py|Routing setting |追加で作成|
-|tests.py|unittest用||
-|apps.py||※変更なし|
-|admin.py||※変更なし|
-|\_\_init__.py|このディレクトリがpythonパッケージである<br>ことを示す空ファイル|※変更なし|
+|hello/models.py|modelsファイル||
+|hello/views.py|viewsファイル<br>(pathに対する動作を定義) ||
+|hello/urls.py|Routing setting |追加で作成|
+|hello/tests.py|unittest用||
+|hello/apps.py||※変更なし|
+|hello/admin.py||※変更なし|
+|hello/\_\_init__.py|このディレクトリがpythonパッケージである<br>ことを示す空ファイル|※変更なし|
 
-- hello/views.pyとhello/urls.pyを編集。
-- djfirst/urls.pyを編集。
+### 5.2 hello/views.pyを編集
 
+- hello/views.py
+
+``` python:views.py
+from django.http import HttpResponse
+
+def hello(request):
+    return HttpResponse('Hello Django!')
+```
+
+### 5.3 djfirst/urls.pyを編集
+
+``` python:urls.py
+urlpatterns = [
+    path('', views.hello, name='hello'),
+    path('admin/', admin.site.urls),
+]
+```
+
+### 5.4 Web Applicationの起動
 - web siteを起動
 
 
-```
+``` powershell
 (djfirst) PS G:\workspace\py\djfirst2> python manage.py runserver
 ```
 
 
-- http://127.0.0.1:8000/hello/
+### 5.5 Web ApplicationへのAccess
+- http://127.0.0.1:8000/
 
-![](http://127.0.0.1:5580/images/django-helloworld.PNG  "Hello World")
+![Django Hello ](https://i.imgur.com/V3R8alb.png)
 
+### 5.4 git commit
 - git commit
 
-```
+``` powershell
 (djfirst) PS G:\workspace\py\djfirst2> git add .
 (djfirst) PS G:\workspace\py\djfirst2> git commit -m "add hello world apps."
 [master dfe436c] add hello world apps.
@@ -370,6 +405,9 @@ d-----       2018/05/28     12:56                migrations
  create mode 100644 hello/urls.py
  create mode 100644 hello/views.py
 ```
+
+## 6. まとめ
+- 
 
 
 // --- end of markdown

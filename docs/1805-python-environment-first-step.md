@@ -149,7 +149,7 @@ Mode                LastWriteTime         Length Name
 
 ##  4. プロジェクト用のpython環境を生成
 
-- pythonでは、pipでインストールした外部パッケージは、libsite-packagesに配置される。が、プロジェクトごとにインストールするパッケージ環境を管理する場合、virtualenvを利用する。
+- pythonでは、pipでインストールした外部パッケージは、lib/site-packagesに配置される。が、プロジェクトごとにインストールするパッケージ環境を管理する場合、virtualenvを利用する。
 - virtualenvに、wrapして使いやすくしたのが、virtualenvwrapper-winとなる。
 - 以下の環境変数を設定。
 -- WORKON_HOME  : python環境を配備
@@ -291,6 +291,7 @@ pysample
 ###  4.2 sample環境を削除
 
 - 以下、virtualenvを、deactivateし、環境削除。
+
 ```
 (pysample) PS G:\workplace\py> deactivate
 PS G:\workplace\py> rmvirtualenv pysample
@@ -299,7 +300,6 @@ PS G:\workplace\py> rmvirtualenv pysample
 
 PS G:\workplace\py>
 ```
-{code}
 
 - なお、PROJECT_HOME内のPROJECTフォルダは、適宜、削除する。
 
