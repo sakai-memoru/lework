@@ -22,7 +22,7 @@ https://github.com/sakai-memoru/djfirst
 
 ## 1. 環境確認
 
-- poowershellで環境を確認
+- powershellで環境を確認
 
 
 ``` powershell
