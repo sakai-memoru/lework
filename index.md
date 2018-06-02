@@ -9,7 +9,7 @@
 ## Django
 
 - [Django first step](docs/1805-django-first-step.md)
-- [Django second step]
+- [Django second step](docs/1805-django-second-step.md)
 - [Django third step]
 
 ## Django REST Framework
