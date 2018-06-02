@@ -199,17 +199,65 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ```
 
-## 4. Web Application with templates
+## 4. create superuser
+- Migrate database and create superuser.
 
+  - reference
+    - Django 管理画面の利用 
+      - http://python.keicode.com/django/admin-site-enabling.php 
 
-## 5. 
+``` powershell
+(djsecond) PS G:\workplace\py\djsecond> python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying sessions.0001_initial... OK
 
+(djsecond) PS G:\workplace\py\djsecond> python manage.py createsuperuser
+Username (leave blank to use 'sakai'): admin
+Email address: sakai.memoru@gmail.com
+Password:
+Password (again):
+Superuser created successfully.
+(djsecond) PS G:\workplace\py\djsecond>
+```
+
+- access http://127.0.0.1:8000/admin/
+  - When managing databse related to models, we can use this admin tool.
+
+![django admin login](https://i.imgur.com/g6xD3PW.png)
+
+![django admin top](https://i.imgur.com/KEbMtsU.png)
+
+![django admin users](https://i.imgur.com/T5GRk7z.png)
+
+## 5. Web Application with templates
+
+``` powershell
+(djsecond) PS G:\workplace\py\djsecond> mkdir template
+
+```
+
+[gimmick:gist](19a6f60a50919cf879becbd6c3ef5d81)
 
 ## 6. Summery
 
 - On the article we have done below:
-  - djangoのテンプレートを利用して、HTML表示。
-  - Django Adminサイトを利用
+  - Login on Django Admin site.
+  - Displate html with django template.
 
 
 // --- end of markdown
