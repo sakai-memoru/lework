@@ -19,7 +19,7 @@ https://github.com/sakai-memoru/djsecond
 - git 2.16.2.windows.1
 - django 2.0.5
 
-## 1. 環境確認
+## 1. check environment
 
 - powershellで環境を確認
 
@@ -107,10 +107,6 @@ Mode                LastWriteTime         Length Name
 d-----         6/2/2018   8:18 AM                djfirst
 
 
-(djsecond) PS G:\workplace\py> django-admin djsecond
-No Django settings specified.
-Unknown command: 'djsecond'
-Type 'django-admin help' for usage.
 (djsecond) PS G:\workplace\py> django-admin startproject djsecond
 (djsecond) PS G:\workplace\py> ls
 
@@ -121,6 +117,7 @@ Mode                LastWriteTime         Length Name
 d-----         6/2/2018   8:18 AM                djfirst
 d-----         6/2/2018   9:16 AM                djsecond
 
+(djsecond) PS G:\workplace\py> cd $Env:PROJECT_HOME
 (djsecond) PS G:\workplace\py> cd .\djsecond\
 (djsecond) PS G:\workplace\py\djsecond>
 ```
