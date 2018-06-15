@@ -51,7 +51,7 @@ sandbox
 - mkprojectにより、project環境を構築。（virtualenvwrapperを使ってます。condaの場合は、読み替えてください）
 
 ```powershell
-PS G:\workspace\py> mkproject splate
+PS G:\workspace\py> mkproject djthird
 PS G:\workspace\py> workon
 
 Pass a name to activate one of the following virtualenvs:
@@ -64,7 +64,8 @@ mq
 mservice
 rest
 sandbox
-splate
+djthird
+
 PS G:\workspace\py>
 
 ```
