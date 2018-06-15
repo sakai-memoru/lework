@@ -11,6 +11,7 @@
 - [Django first step](docs/1805-django-first-step.md)
 - [Django second step](docs/1805-django-second-step.md)
 - [Django third step](docs/1806-django-third-step.md)
+- [Django 4th step](docs/1806-django-4th-step.md)
 
 ## Django REST Framework
 
