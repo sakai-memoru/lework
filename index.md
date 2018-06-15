@@ -10,7 +10,7 @@
 
 - [Django first step](docs/1805-django-first-step.md)
 - [Django second step](docs/1805-django-second-step.md)
-- [Django third step]
+- [Django third step](docs/1806-django-third-step.md)
 
 ## Django REST Framework
 
@@ -19,6 +19,9 @@
 ## PostgreSQL
 
 - [PostgreSQL first step]
+
+## Front End
+- [Pug](docs/1806-pug-usage.md)
 
 ## Others
 

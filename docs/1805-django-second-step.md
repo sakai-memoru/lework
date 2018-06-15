@@ -1,5 +1,7 @@
 ＞ [Home](../index.md)    ＞＞ [first step](1805-django-first-step.md)
 
+＞＞ [Third Step](1806-django-third-step.md)
+
 # 1805-django-second-step
 
 ## Overview
@@ -243,18 +245,13 @@ Superuser created successfully.
 
 ## 5. Web Application with templates
 
-``` powershell
-(djsecond) PS G:\workplace\py\djsecond> mkdir template
+- ※ すいません、third stepにて記述します。
 
-```
-
-[gimmick:gist](19a6f60a50919cf879becbd6c3ef5d81)
 
 ## 6. Summery
 
 - On the article we have done below:
   - Login on Django Admin site.
-  - Displate html with django template.
 
 
 // --- end of markdown

@@ -1,9 +1,9 @@
 # Leading Edge Work documents
 
 ## Overview
-- Work documents
+- Documents for le work camp.
 
 ## Contents
-- When working at home, update this repository.
+- 開発の際に認識合わせが必要な情報を、簡単に記述する。
 
 // --- end of file
