@@ -1,5 +1,11 @@
 # Home (index.md)
 
+## Conda
+- [Conda operation](docs/1811-Conda-operation.md)
+
+
+
+- - - 
 ## Python 
 
 - [python virtualenvwrapper](docs/1805-python-environment-first-step.md)
